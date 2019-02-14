@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+html {
+    background-color: lightpink
+}
+.wrapper {
+    justify-content: center;
+    display: grid;
+    height: 700px;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: '. t .'
+                         '. d .'
+                         '. b .';
+    
+}
+
+#startbutton {
+    font-size: 40px;
+    border-radius: 50px;
+    font-family: "Indie Flower";
+    color: yellow;
+    background-color:deeppink;
+    border-color: white;
+    padding: 20px;
+    padding-bottom: 15px;
+    grid-area: b;
+    height: 100px;
+    width: 200px
+
+}
+
+#startbutton:hover {
+    background-color: black;
+}
+
+#player1 {
+    font-family: "Indie Flower";
+    font-size: 50px;
+    grid-area: t;
+}
+
+#score {
+    color: yellow;
+    font-family: "Indie Flower";
+    font-size: 50px;
+
+}
+
+#dice1 {
+    grid-area: d;
+}
+
+
+
+
+
+
+
