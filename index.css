@@ -5,14 +5,16 @@ html {
 }
 .wrapper {
     justify-content: center;
-    display: grid;
-    height: 700px;
-    width: 100vw;
+    border-style: solid;
+   /*  display: grid;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px 300px;
     grid-template-areas: '. t .'
                          '. d .'
-                         '. b .';
+                         '. b .'; */
+    
     
 }
 
@@ -25,7 +27,6 @@ html {
     border-color: white;
     padding: 20px;
     padding-bottom: 15px;
-    grid-area: b;
     height: 100px;
     width: 200px
 
@@ -33,24 +34,40 @@ html {
 
 #startbutton:hover {
     background-color: black;
+
 }
 
 #player1 {
     font-family: "Indie Flower";
     font-size: 50px;
-    grid-area: t;
+    margin-left: 830px;
+    margin-top: 150px;
 }
 
 #score {
+    text-align: center;
     color: yellow;
     font-family: "Indie Flower";
     font-size: 50px;
+    position: absolute
 
 }
 
 #dice1 {
-    grid-area: d;
+    margin-left: 850px;
+    margin-top: 460px;
+    
 }
+
+#startbutton {
+    position: absolute;
+    margin-left: 850px;
+    margin-top: 800px;
+}
+
+
+
+
 
 
 
