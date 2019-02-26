@@ -13,11 +13,11 @@ html {
     background-color:#A04CFF;
     border-color: white;
     padding: 20px;
-    padding-bottom: 15px;
-    height: 100px;
+    height: 140px;
     width: 200px;
     position: relative;
     margin-top: 40px;
+    margin-right: 800px
     
 
 }
@@ -34,20 +34,70 @@ html {
     outline:0;
 }
 
+#startbutton2 {
+    font-size: 40px;
+    border-radius: 50px;
+    font-family: "Indie Flower";
+    color: yellow;
+    background-color:#A04CFF;
+    border-color: white;
+    padding: 20px;
+    height: 140px;
+    width: 200px;
+    position: relative;
+    margin-top: -140px;
+    margin-left: 800px
+    
+
+}
+
+#startbutton2:hover {
+    background-color: #FF4A3C;
+    animation-name: inherit;
+    animation-duration: 4s;
+
+
+}
+
+#startbutton2:focus {
+    outline:0;
+}
+
+#howtoplay {
+    font-family: "Indie Flower";
+    color: white;
+    font-size: 25px;
+    text-decoration: underline;
+    margin-top: -125px
+}
+
+#info {
+    font-family: "Indie Flower";
+    color: white;
+    font-size: 14px;
+    width: 380px;
+    margin-top: -12px
+
+
+}
+
 #player1 {
     font-family: "Indie Flower";
     font-size: 50px;
-    margin-top: 50px;
+    margin-top: 30px;
     position: relative;
     text-align: center;
     border-style: solid;
-    width: 900px;
-    height: 560px;
+    width: 500px;
+    height: 500px;
     padding-top: 50px;
     color: white;
     border-color: white;
-    
+    margin-right: 800px;
+}
 
+#player1:hover {
+    color:#FF4A3C
 }
 
 #dicescore {
@@ -56,27 +106,27 @@ html {
     font-size: 50px;
     position: absolute;
     text-align: center;
-    margin-top: 10px
+    margin-top: -100px;
 
 }
 
 #dice {
     display: flex;
     justify-content: center;
-     margin-top: 250px;
-     height: 200px;
-     width: 200px;
+     margin-top: 100px;
+     height: 250px;
+     width: 250px;
      position: absolute
 }
 
 #score {
     color:#A04CFF;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 90px;
+    font-size: 150px;
     position: absolute;
     text-align: center;
-    margin-top: 10px;
-    margin-left: -590px
+    margin-top: 80px;
+    margin-left: -400px
 
 }
 
@@ -84,13 +134,22 @@ html {
     color:#A04CFF;
     position: absolute;
     text-align: center;
-    margin-top: 10px;
-    margin-left: 600px;
-    width: 220px
+    margin-top: -360px;
+    margin-left: -130px;
+    width: 80px
+}
+
+#dicegif2 {
+    color:#A04CFF;
+    position: absolute;
+    text-align: center;
+    margin-top: -360px;
+    margin-left: 130px;
+    width: 80px;
 }
 
 
-#player1 {
+/* #player1 {
     animation-duration: 3s;
     animation-name: slidein;
   }
@@ -105,6 +164,36 @@ html {
       margin-left: 0%;
       width: 100%;
     }
+  } */
+
+  #player2 {
+    font-family: "Indie Flower";
+    font-size: 50px;
+    margin-top: -590px;
+    position: relative;
+    text-align: center;
+    border-style: solid;
+    width: 500px;
+    height: 500px;
+    padding-top: 50px;
+    color: white;
+    border-color: white;
+    margin-left: 800px;
+  }
+
+  #player2:hover {
+    color:#FF4A3C;
+}
+
+  #score2 {
+    color:#A04CFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    position: absolute;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 400px
+
   }
 
 .wrapper {

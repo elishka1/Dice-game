@@ -4,6 +4,8 @@
 
  let score = 0
 
+ let score2 = 0
+
  function roll () {
   dicescore= Math.floor(Math.random() * (6 - 1 + 1) + 1);
   document.getElementById("dicescore").innerHTML = dicescore
@@ -20,6 +22,21 @@ if (dicescore==1) {
     document.getElementById("dice").src="./img/dice1.png";
     document.getElementById("dicescore").innerHTML = "You're Out!"
     score=0
+    
+}
+
+score2 += dicescore;
+  document.getElementById("score2").innerHTML = score2
+
+if (score2>=20) {
+    document.getElementById("dicescore").innerHTML = "You Win!"
+    score2=0
+ }
+
+if (dicescore==1) {
+    document.getElementById("dice").src="./img/dice1.png";
+    document.getElementById("dicescore").innerHTML = "You're Out!"
+    score2=0
     
 }
 
@@ -43,4 +60,5 @@ else {
 }
 
  }
+
 
