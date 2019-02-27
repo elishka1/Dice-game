@@ -24,8 +24,6 @@ html {
 
 #startbutton:hover {
     background-color: #FF4A3C;
-    animation-name: inherit;
-    animation-duration: 4s;
 
 
 }
@@ -46,7 +44,7 @@ html {
     width: 200px;
     position: relative;
     margin-top: -140px;
-    margin-left: 800px
+    margin-left: 800px;
     
 
 }
@@ -68,15 +66,28 @@ html {
     color: white;
     font-size: 25px;
     text-decoration: underline;
-    margin-top: -125px
+    margin-top: -135px;
+    text-align: center;
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: yellow;}
+    to {color:#FF4A3C;}
 }
 
 #info {
     font-family: "Indie Flower";
     color: white;
     font-size: 14px;
-    width: 380px;
-    margin-top: -12px
+    width: 450px;
+    margin-top: -12px;
+    text-align: center;
 
 
 }
@@ -84,12 +95,12 @@ html {
 #player1 {
     font-family: "Indie Flower";
     font-size: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
     position: relative;
     text-align: center;
     border-style: solid;
     width: 500px;
-    height: 500px;
+    height: 480px;
     padding-top: 50px;
     color: white;
     border-color: white;
@@ -103,7 +114,7 @@ html {
 #dicescore {
     color: yellow;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     position: absolute;
     text-align: center;
     margin-top: -100px;
@@ -134,7 +145,7 @@ html {
     color:#A04CFF;
     position: absolute;
     text-align: center;
-    margin-top: -360px;
+    margin-top: -350px;
     margin-left: -130px;
     width: 80px
 }
@@ -143,7 +154,7 @@ html {
     color:#A04CFF;
     position: absolute;
     text-align: center;
-    margin-top: -360px;
+    margin-top: -350px;
     margin-left: 130px;
     width: 80px;
 }
@@ -169,12 +180,12 @@ html {
   #player2 {
     font-family: "Indie Flower";
     font-size: 50px;
-    margin-top: -590px;
+    margin-top: -570px;
     position: relative;
     text-align: center;
     border-style: solid;
     width: 500px;
-    height: 500px;
+    height: 480px;
     padding-top: 50px;
     color: white;
     border-color: white;
@@ -195,6 +206,79 @@ html {
     margin-left: 400px
 
   }
+
+  #p1win {
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    position: absolute;
+    text-align: center;
+    margin-top: 300px;
+    margin-left: -400px
+
+  }
+
+  #p1win {
+    animation-name: flash;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: yellow;}
+    to {color:#FF4A3C;}
+}
+
+  #p2win {
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    position: absolute;
+    text-align: center;
+    margin-top: 300px;
+    margin-left: 400px
+  }
+
+  #p2win {
+    animation-name: flash;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: yellow;}
+    to {color:#FF4A3C;}
+}
+
+#reset {
+    font-size: 30px;
+    border-radius: 50px;
+    font-family: "Indie Flower";
+    color: yellow;
+    background-color:#A04CFF;
+    border-color: white;
+    padding: 20px;
+    height: 80px;
+    width: 150px;
+    position: relative;
+    margin-top: -85px;
+    text-align: center;
+    
+}
+
+#reset:hover {
+    background-color: #FF4A3C;
+}
+
+#reset:focus {
+    outline:0;
+}
 
 .wrapper {
     display: flex;
